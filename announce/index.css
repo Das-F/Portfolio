@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.announce {
+  margin: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #8782aa;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #59547eff;
+  margin: 10px 0 40px 0;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.announce-paragraph {
+  max-width: 800px;
+}
+
+.star {
+  width: 70vw;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
