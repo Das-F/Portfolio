@@ -27,7 +27,7 @@ html {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px;
+  padding: 8px;
   margin: 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -38,10 +38,6 @@ html {
   color: #5e2ca7;
   font-weight: bold;
   text-decoration: none;
-}
-.main-nav a:hover,
-.main-nav a:focus-visible {
-  box-shadow: inset 0 -2px 0 currentColor;
 }
 
 .main-nav a {
@@ -75,24 +71,17 @@ html {
 .nav-list a {
   display: inline-block;
   padding: 8px 10px;
-  border-radius: 4px;
-  transition:
-    background-color 0.15s ease,
-    transform 0.15s ease;
 }
 
-.nav-list a:hover {
-  transform: scale(1.05);
-}
-
+.nav-list a:hover,
 .nav-list a:focus-visible {
-  outline: 3px solid rgba(255, 255, 255, 0.9);
-  outline-offset: 3px;
-  background: rgba(255, 255, 255, 0.06);
+  transform: scale(1.05);
+  text-decoration: underline;
+  color: #ff8a00;
 }
 
 .logo-name {
-  max-width: 190px;
+  max-width: 200px;
   height: auto;
 }
 
@@ -101,21 +90,115 @@ html {
   font-size: 30px;
   margin: 0;
 }
+
+/* Social icons placed in the header (top right) */
+.nav-socials {
+  top: 14px;
+  right: 18px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 999;
+}
+.nav-socials .social-media-icon {
+  width: 28px;
+  height: auto;
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.15));
+}
+
+@media (max-width: 768px) {
+  .nav-socials {
+    top: 10px;
+    right: 12px;
+    gap: 8px;
+  }
+  .nav-socials .social-media-icon {
+    width: 24px;
+  }
+}
+
 /* Header */
 .header {
   position: relative;
   text-align: center;
-  color: #fff;
-  background-image: url("../assets/illustrations/artemislab-background.jpg");
-  background-size: cover;
+  background: linear-gradient(90deg, #5e2ca7, #ff8a00);
   background-position: center;
-  background-repeat: no-repeat;
   width: 100%;
-  /* min-height: 60vh; */
+  min-height: 58vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.header-text h1 {
+  font-size: 3.5rem;
+  max-width: 800px;
+  line-height: 1.2;
+  margin: 0 0 40px 0;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 35px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta-primary {
+  background-color: #ff8a00;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.cta-primary:hover,
+.cta-primary:focus-visible {
+  transform: translateY(-2px);
+  background-color: #e67600;
+}
+
+.cta-secondary {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  font-weight: bold;
+  backdrop-filter: blur(4px);
+}
+
+.cta-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+.cta-secondary:hover::after {
+  transform: translateX(4px);
+}
+
+.hero-trust {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  opacity: 0.8;
 }
 
 .header::before {
@@ -124,10 +207,6 @@ html {
   inset: 0;
   background: rgba(0, 0, 0, 0.25);
   z-index: 0;
-}
-
-.header-overlay {
-  display: none;
 }
 
 .header-text {
@@ -140,43 +219,8 @@ html {
   align-items: center;
   gap: 1rem;
   color: #fff;
-}
-
-.header-text img {
-  max-width: 300px;
-  width: 50%;
-  height: auto;
-}
-
-.header-text h1 {
-  font-size: 4.5rem;
-  margin: 20px;
-}
-
-.header-text h2 {
-  font-size: 1.8rem;
-  line-height: 1.3;
-  margin: 40px 0;
-  max-width: 1050px;
-  color: #fff;
-}
-
-.cta {
-  background-color: #ff8a00;
-  color: #fff;
-  border: none;
-  padding: 15px 30px;
-  font-size: 21px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 20px;
-  text-decoration: none;
-}
-
-.cta:hover,
-.cta:focus-visible {
-  background-color: #e67600;
-  transform: scale(1.05);
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* About */
@@ -733,7 +777,7 @@ h2 {
 }
 .logo-link img {
   display: block;
-  max-width: 150px;
+  max-width: 200px;
   height: auto;
 }
 
