@@ -302,7 +302,11 @@ li {
   color: #333;
 }
 
-.read-more {
+.read-article-link {
+  text-decoration: none;
+}
+
+.read-more-text {
   display: inline-block;
   margin-top: 1rem;
   color: #5e2ca7;
