@@ -4,11 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mentions légales – Artemis Lab</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/a-propos.css" />
   </head>
   <body>
-    <nav class="main-nav" aria-label="Navigation principale">
-      <a class="logo-link" href="/" aria-label="Haut de page"><img class="logo-name" src="./assets/logos/logo_artemislab-name.png" alt="Logo Artemis Lab" /></a>
+
+<nav class="main-nav" aria-label="Navigation principale">
+      <a class="logo-link" href="#top" aria-label="Haut de page"><img class="logo-name" src="./assets/logos/logo_artemislab-name.png" alt="Logo Artemis Lab" /></a>
+      <ul class="nav-list">
+        <li><a href="#about" aria-label="Aller à la section à propos">À propos</a></li>
+        <li><a href="#services" aria-label="Aller à la section services">Nos services</a></li>
+        <li><a href="#projects">Nos réalisations</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="#contact" aria-label="Aller à la section contact">Contact</a></li>
+      </ul>
+      <div class="nav-socials" aria-hidden="false">
+        <a href="https://www.facebook.com/profile.php?id=61586052476132" target="_blank" rel="noopener noreferrer" aria-label="Facebook Artemis Lab">
+          <img class="social-media-icon" src="./assets/social%20medias/Fb.png" alt="Facebook Artemis Lab" />
+        </a>
+        <a href="https://www.instagram.com/artemis.lab.dev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Artemis Lab">
+          <img class="social-media-icon" src="./assets/social%20medias/insta.png" alt="Instagram Artemis Lab" />
+        </a>
+      </div>
     </nav>
     <section class="header" aria-label="En-tête principal">
       <div class="header-overlay">
@@ -54,5 +70,49 @@
       <h3>Liens externes :</h3>
       <p>Ce site peut contenir des liens vers des sites tiers. Artemis Lab n’assume aucune responsabilité quant au contenu de ces sites.</p>
     </section>
+
+       <footer class="site-footer">
+      <div class="footer-highlight" id="contact">
+        <p>Travaillons ensemble sur votre projet</p>
+        <address>
+          <a class="footer-cta" href="tel:+33613972752">Appelez-nous</a>
+        </address>
+      </div>
+      <div class="footer-main">
+        <div class="footer-menu">
+        <div class="footer-socials">
+          <p>Suivez Artemis Lab :</p>
+          <div class="footer-social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61586052476132" target="_blank" rel="noopener noreferrer" aria-label="Facebook Artemis Lab">
+            <img class="social-media-icon" src="./assets/social%20medias/Fb.png" alt="Facebook Artemis Lab" />
+          </a>
+          <a href="https://www.instagram.com/artemis.lab.dev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Artemis Lab">
+            <img class="social-media-icon" src="./assets/social%20medias/insta.png" alt="Instagram Artemis Lab" />
+          </a>
+          </div>
+        <nav aria-label="Liens de pied de page">
+          <ul class="footer-links">
+         <li><a href="#about" aria-label="Aller à la section à propos">À propos</a></li>
+        <li><a href="#services" aria-label="Aller à la section services">Nos services</a></li>
+        <li><a href="#projects">Nos réalisations</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="#contact" aria-label="Aller à la section contact">Contact</a></li>
+          </ul>
+            </div>
+
+            
+        </div>
+       <div class="footer-mentions">
+        <p class="footer-copy">©<span id="current-year"></span> Artemis Lab. Tous droits réservés.</p>
+        <a class="footer-link" href="#top" aria-label="revenir en haut de la page">Haut de page</a>
+        <a class="footer-link" href="/mentions-legales.html" aria-label="Mentions légales"> Mentions légales </a>
+        </div>
+         </nav>
+      </div>
+    </footer>
+    <script src="./scripts/carousel.js" defer></script>
+     <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
