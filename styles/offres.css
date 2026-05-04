@@ -1,0 +1,141 @@
+/* ===== OFFRES ===== */
+
+.offers-page .about-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.offers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.offer-card {
+  background: #fff;
+  border: 1px solid #e6ddf0;
+  border-radius: 10px;
+  padding: 25px;
+  width: 300px;
+  max-width: 90%;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.offer-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.offer-description {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.offer-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.offer-card ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.offer-card ul li::before {
+  content: "✓";
+  color: #5e2ca7;
+  margin-right: 8px;
+}
+
+.offer-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #5e2ca7;
+  margin: 15px 0;
+}
+
+.offer-badge {
+  background: #5e2ca7;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Hover léger (comme tes autres cards) */
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Mise en avant de l’offre centrale */
+.offer-card.highlight {
+  border: 2px solid #5e2ca7;
+  position: relative;
+}
+
+/* Hover identique aux autres cartes */
+.offer-card.highlight:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* OPTIONS */
+
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.options-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.options,
+.services-light {
+  background: #fff;
+}
+
+/* SERVICES LIGHT */
+
+.services-light ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.services-light li {
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .offers-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-card {
+    width: 90%;
+  }
+
+  .offer-card.highlight {
+    transform: none; /* évite effet bizarre mobile */
+  }
+}
