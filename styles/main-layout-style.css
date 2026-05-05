@@ -375,8 +375,6 @@ h3 {
 /* Make the logo link easier to tap */
 .logo-link {
   display: inline-block;
-  padding: 6px;
-  margin: 0 8px 0 15px;
 }
 .logo-link img {
   display: block;
@@ -452,7 +450,7 @@ h3 {
 
 .footer-highlight p {
   font-size: 18px;
-  margin: 0 0 5px 0;
+  margin: 0 0 10px 0;
   color: black;
 }
 
@@ -554,7 +552,7 @@ h3 {
 /* Make the logo link easier to tap */
 .logo-link {
   display: inline-block;
-  padding: 6px;
+  padding: 4px;
   margin-right: 8px;
 }
 .logo-link img {
