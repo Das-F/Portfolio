@@ -2,22 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://artemislab.fr/</loc>
-		<lastmod>2026-01-29</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
+		<lastmod>2026-05-31</lastmod>	
 	</url>
+<url>
+		<loc>https://artemislab.fr/a-propos.html</loc>
+		<lastmod>2026-05-31</lastmod>
+		</url>
+	<url>
+		<loc>https://artemislab.fr/services-offres/</loc>
+		<lastmod>2026-05-31</lastmod>
+		</url>
+
+	<url>
+	
 	<url>
 		<loc>https://artemislab.fr/mentions-legales.html</loc>
-		<lastmod>2026-01-29</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.3</priority>
-	</url>
+		<lastmod>2026-05-31</lastmod>
+		</url>
+
 	<url>
-		<loc>https://artemislab.fr/dev-lab/index.html</loc>
-		<lastmod>2026-01-29</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
+		<loc>https://artemislab.fr/contact.html</loc>
+		<lastmod>2026-05-31</lastmod>
+		</url>
+
+		<url>
+		<loc>https://artemislab.fr/dev-lab/</loc>
+		<lastmod>2026-05-31</lastmod>
+		</url>
+
+	<url>
+		<loc>https://artemislab.fr/dev-lab/article-erreur-404.html</loc>
+		<lastmod>2026-05-31</lastmod>
+		</url>
+
+	<url>
+		<loc>https://artemislab.fr/dev-lab/article-un-site-ne-se-fait-pas-en-2-jours.html</loc>
+		<lastmod>2026-05-31</lastmod>
+		</url>
+
+	<url>
+		<loc>https://artemislab.fr/dev-lab/article-securite-lovable-+-supabase-conseils.html</loc>
+		<lastmod>2026-05-31</lastmod>
+		</url>
 
 </urlset>
 
