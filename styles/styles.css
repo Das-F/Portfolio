@@ -133,21 +133,21 @@ html {
 
 .header-text h1 {
   font-size: 3.5rem;
-  max-width: 800px;
+  max-width: 950px;
   line-height: 1.2;
   margin: 0 0 40px 0;
 }
 
 .hero-subtitle {
   font-size: 1.4rem;
-  max-width: 700px;
+  max-width: 800px;
   line-height: 1.5;
 }
 
 .hero-description {
   font-size: 1.1rem;
   opacity: 0.9;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .hero-cta {
